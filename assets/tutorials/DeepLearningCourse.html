@@ -807,10 +807,6 @@ body {
   <nav id="toc-list">
     <ul><li style="padding-left:0px"><a href="#deep-learning-a-complete-university-course" class="toc-link" data-level="1">Deep Learning: A Complete University Course</a></li>
 <li style="padding-left:14px"><a href="#from-first-principles-to-state-of-the-art-architectures" class="toc-link" data-level="2">From First Principles to State-of-the-Art Architectures</a></li>
-<li style="padding-left:28px"><a href="#course-overview" class="toc-link" data-level="3">Course Overview</a></li>
-<li style="padding-left:28px"><a href="#who-is-this-for" class="toc-link" data-level="3">Who Is This For?</a></li>
-<li style="padding-left:28px"><a href="#what-you-will-learn" class="toc-link" data-level="3">What You Will Learn</a></li>
-<li style="padding-left:28px"><a href="#how-to-use-this-notebook" class="toc-link" data-level="3">How to Use This Notebook</a></li>
 <li style="padding-left:0px"><a href="#chapter-1-introduction-to-deep-learning" class="toc-link" data-level="1">Chapter 1: Introduction to Deep Learning</a></li>
 <li style="padding-left:14px"><a href="#11-what-is-deep-learning" class="toc-link" data-level="2">1.1 What is Deep Learning?</a></li>
 <li style="padding-left:14px"><a href="#12-why-deep" class="toc-link" data-level="2">1.2 Why &quot;Deep&quot;?</a></li>
@@ -996,13 +992,13 @@ body {
 <main id="main">
   <div id="content">
     <div class="nb-header">
-      <h1>Deep Learning Course</h1>
+      <h1>Deep Learning: A Complete Crash Course</h1>
       <div class="nb-meta">
       </div>
     </div>
 
     <!-- Global controls -->
-    <div id="global-controls">
+    <!-- <div id="global-controls">
       <button class="ctrl-btn" id="btn-all-code" onclick="toggleAllCode()">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         Hide All Code
@@ -1011,13 +1007,11 @@ body {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         Hide All Output
       </button>
-    </div>
+    </div> -->
 
     <!-- Cells -->
-    <div class="cell md-cell"><h1 id="deep-learning-a-complete-university-course">Deep Learning: A Complete University Course</h1>
+    <div class="cell md-cell"><h1 id="deep-learning-a-complete-university-course"></h1>
 <h2 id="from-first-principles-to-state-of-the-art-architectures">From First Principles to State-of-the-Art Architectures</h2>
-
-<hr>
 
 <blockquote>
 <p><strong>"Deep learning is not magic. It is mathematics, statistics, and a lot of intuition built through careful study."</strong></p>
@@ -1027,7 +1021,7 @@ body {
 
 <h3 id="course-overview">Course Overview</h3>
 
-<p>This notebook is your <strong>complete, self-contained textbook</strong> for mastering Deep Learning. Every concept is explained from scratch, no shortcuts, no hand-waving. We build up from fundamental mathematics through to the most advanced architectures used in modern AI research.</p>
+<p>This notebook is your <strong>complete, self-contained textbook</strong> for mastering Deep Learning. Every concept is explained from scratch, no shortcuts, no hand-waving. We build up from fundamentals through to the most advanced architectures used in modern AI research.</p>
 
 <h3 id="who-is-this-for">Who Is This For?</h3>
 
@@ -1063,7 +1057,7 @@ body {
 
 <p>Each chapter contains:</p>
 <ul>
-<li><strong>Theory</strong>: rigorous explanations with mathematical derivations</li>
+<li><strong>Theory</strong>: explanations with mathematical Foundations</li>
 <li><strong>Formulas</strong>: every equation explained term by term</li>
 <li><strong>Intuition</strong>: analogies and simple explanations</li>
 <li><strong>Q&A Sections</strong>: common student questions answered in depth</li>
@@ -5036,50 +5030,50 @@ function toggleOutput(btn, outputId) {
 let allCodeHidden = true;   // code hidden by default
 let allOutputHidden = false;
 
-function toggleAllCode() {
-  allCodeHidden = !allCodeHidden;
-  document.querySelectorAll('.code-block').forEach(b => {
-    b.classList.toggle('hidden', allCodeHidden);
-  });
-  document.querySelectorAll('.toggle-code-btn span').forEach(s => {
-    s.textContent = allCodeHidden ? 'Show Code' : 'Hide Code';
-  });
-  const btn = document.getElementById('btn-all-code');
-  btn.lastChild.textContent = allCodeHidden ? ' Hide All Code' : ' Show All Code';
-  btn.classList.toggle('active', allCodeHidden);
-}
+// function toggleAllCode() {
+//   allCodeHidden = !allCodeHidden;
+//   document.querySelectorAll('.code-block').forEach(b => {
+//     b.classList.toggle('hidden', allCodeHidden);
+//   });
+//   document.querySelectorAll('.toggle-code-btn span').forEach(s => {
+//     s.textContent = allCodeHidden ? 'Show Code' : 'Hide Code';
+//   });
+//   const btn = document.getElementById('btn-all-code');
+//   btn.lastChild.textContent = allCodeHidden ? ' Hide All Code' : ' Show All Code';
+//   btn.classList.toggle('active', allCodeHidden);
+// }
 
-function toggleAllOutput() {
-  allOutputHidden = !allOutputHidden;
-  document.querySelectorAll('.cell-output').forEach(o => {
-    o.classList.toggle('hidden', allOutputHidden);
-  });
-  document.querySelectorAll('.toggle-output-btn span').forEach(s => {
-    s.textContent = allOutputHidden ? 'Show Output' : 'Hide Output';
-  });
-  const btn = document.getElementById('btn-all-output');
-  btn.lastChild.textContent = allOutputHidden ? ' Show All Output' : ' Hide All Output';
-  btn.classList.toggle('active', allOutputHidden);
-}
+// function toggleAllOutput() {
+//   allOutputHidden = !allOutputHidden;
+//   document.querySelectorAll('.cell-output').forEach(o => {
+//     o.classList.toggle('hidden', allOutputHidden);
+//   });
+//   document.querySelectorAll('.toggle-output-btn span').forEach(s => {
+//     s.textContent = allOutputHidden ? 'Show Output' : 'Hide Output';
+//   });
+//   const btn = document.getElementById('btn-all-output');
+//   btn.lastChild.textContent = allOutputHidden ? ' Show All Output' : ' Hide All Output';
+//   btn.classList.toggle('active', allOutputHidden);
+// }
 
-function updateGlobalCodeState() {
-  const blocks = document.querySelectorAll('.code-block');
-  const hiddenCount = document.querySelectorAll('.code-block.hidden').length;
-  allCodeHidden = hiddenCount === blocks.length;
-  const btn = document.getElementById('btn-all-code');
-  // When all hidden → button offers "Show All Code"; when any visible → "Hide All Code"
-  if (btn.lastChild) btn.lastChild.textContent = allCodeHidden ? ' Show All Code' : ' Hide All Code';
-  btn.classList.toggle('active', allCodeHidden);
-}
+// function updateGlobalCodeState() {
+//   const blocks = document.querySelectorAll('.code-block');
+//   const hiddenCount = document.querySelectorAll('.code-block.hidden').length;
+//   allCodeHidden = hiddenCount === blocks.length;
+//   const btn = document.getElementById('btn-all-code');
+//   // When all hidden → button offers "Show All Code"; when any visible → "Hide All Code"
+//   if (btn.lastChild) btn.lastChild.textContent = allCodeHidden ? ' Show All Code' : ' Hide All Code';
+//   btn.classList.toggle('active', allCodeHidden);
+// }
 
-function updateGlobalOutputState() {
-  const outs = document.querySelectorAll('.cell-output');
-  const hiddenCount = document.querySelectorAll('.cell-output.hidden').length;
-  allOutputHidden = hiddenCount === outs.length;
-  const btn = document.getElementById('btn-all-output');
-  if (btn.lastChild) btn.lastChild.textContent = allOutputHidden ? ' Show All Output' : ' Hide All Output';
-  btn.classList.toggle('active', allOutputHidden);
-}
+// function updateGlobalOutputState() {
+//   const outs = document.querySelectorAll('.cell-output');
+//   const hiddenCount = document.querySelectorAll('.cell-output.hidden').length;
+//   allOutputHidden = hiddenCount === outs.length;
+//   const btn = document.getElementById('btn-all-output');
+//   if (btn.lastChild) btn.lastChild.textContent = allOutputHidden ? ' Show All Output' : ' Hide All Output';
+//   btn.classList.toggle('active', allOutputHidden);
+// }
 
 // ── FAB ──────────────────────────────────────────────────────────────────
 const fab = document.getElementById('fab-top');
@@ -5132,11 +5126,11 @@ window.addEventListener('scroll', updateActiveToc, { passive: true });
 updateActiveToc();
 
 // Set correct initial label for the "all code" button (code starts hidden)
-(function() {
-  const btn = document.getElementById('btn-all-code');
-  if (btn && btn.lastChild) btn.lastChild.textContent = ' Show All Code';
-  btn && btn.classList.add('active');
-})();
+// (function() {
+//   const btn = document.getElementById('btn-all-code');
+//   if (btn && btn.lastChild) btn.lastChild.textContent = ' Show All Code';
+//   btn && btn.classList.add('active');
+// })();
 
 // ── Download HTML ────────────────────────────────────────────────────────
 function downloadHTML() {

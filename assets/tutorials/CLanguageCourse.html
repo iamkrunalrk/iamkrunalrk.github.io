@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>C Language Course</title>
+<title>Programming in C Language</title>
 
 <!-- Highlight.js for syntax highlighting -->
 <link rel="stylesheet" id="hljs-light-theme"
@@ -802,106 +802,91 @@ body {
 <aside id="sidebar">
   <div id="sidebar-header">
     <div id="sidebar-title">Table of Contents</div>
-    <div id="sidebar-nb-title">C Language Course</div>
+    <div id="sidebar-nb-title">Programming in C Language</div>
   </div>
   <nav id="toc-list">
-    <ul><li style="padding-left:0px"><a href="#complete-c-programming-language-master-guide" class="toc-link" data-level="1">Complete C Programming Language: Master Guide</a></li>
-<li style="padding-left:28px"><a href="#from-zero-to-hero-every-concept-explained-simply" class="toc-link" data-level="3">From Zero to Hero: Every Concept Explained Simply</a></li>
-<li style="padding-left:0px"><a href="#chapter-1-introduction-to-c-programming" class="toc-link" data-level="1">Chapter 1: Introduction to C Programming</a></li>
+    <ul><li style="padding-left:0px"><a href="#chapter-1-introduction-to-c-programming" class="toc-link" data-level="1">Chapter 1: Introduction to C Programming</a></li>
 <li style="padding-left:14px"><a href="#what-is-c" class="toc-link" data-level="2">What is C?</a></li>
 <li style="padding-left:14px"><a href="#a-brief-history" class="toc-link" data-level="2">A Brief History</a></li>
 <li style="padding-left:14px"><a href="#why-learn-c" class="toc-link" data-level="2">Why Learn C?</a></li>
 <li style="padding-left:14px"><a href="#how-c-works-the-compilation-process" class="toc-link" data-level="2">How C Works: The Compilation Process</a></li>
 <li style="padding-left:14px"><a href="#c-vs-other-languages" class="toc-link" data-level="2">C vs Other Languages</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-1" class="toc-link" data-level="3">FAQs: Chapter 1</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-1" class="toc-link" data-level="2">FAQs: Chapter 1</a></li>
 <li style="padding-left:0px"><a href="#chapter-2-setting-up-your-environment" class="toc-link" data-level="1">Chapter 2: Setting Up Your Environment</a></li>
 <li style="padding-left:14px"><a href="#what-you-need" class="toc-link" data-level="2">What You Need</a></li>
-<li style="padding-left:28px"><a href="#1-a-c-compiler" class="toc-link" data-level="3">1. A C Compiler</a></li>
-<li style="padding-left:28px"><a href="#2-installing-gcc" class="toc-link" data-level="3">2. Installing GCC</a></li>
-<li style="padding-left:28px"><a href="#on-ubuntudebian-linux" class="toc-link" data-level="3">On Ubuntu/Debian Linux:</a></li>
-<li style="padding-left:28px"><a href="#on-macos-with-homebrew" class="toc-link" data-level="3">On macOS (with Homebrew):</a></li>
-<li style="padding-left:28px"><a href="#on-windows-install-mingw-or-use-wsl" class="toc-link" data-level="3">On Windows: Install MinGW or use WSL</a></li>
-<li style="padding-left:28px"><a href="#verify-installation" class="toc-link" data-level="3">Verify installation:</a></li>
-<li style="padding-left:28px"><a href="#3-compiling-running-a-c-program" class="toc-link" data-level="3">3. Compiling &amp; Running a C Program</a></li>
-<li style="padding-left:28px"><a href="#step-1-write-code-in-helloc" class="toc-link" data-level="3">Step 1: Write code in hello.c</a></li>
-<li style="padding-left:28px"><a href="#step-2-compile" class="toc-link" data-level="3">Step 2: Compile</a></li>
-<li style="padding-left:28px"><a href="#step-3-run" class="toc-link" data-level="3">Step 3: Run</a></li>
-<li style="padding-left:28px"><a href="#compile-with-warnings-enabled-good-practice" class="toc-link" data-level="3">Compile with warnings enabled (good practice!):</a></li>
-<li style="padding-left:28px"><a href="#compile-with-c11-standard" class="toc-link" data-level="3">Compile with C11 standard:</a></li>
-<li style="padding-left:28px"><a href="#4-recommended-ides-editors" class="toc-link" data-level="3">4. Recommended IDEs / Editors</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-2" class="toc-link" data-level="3">FAQs: Chapter 2</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-2" class="toc-link" data-level="2">FAQs: Chapter 2</a></li>
 <li style="padding-left:0px"><a href="#chapter-3-your-first-c-program-hello-world" class="toc-link" data-level="1">Chapter 3: Your First C Program: Hello, World!</a></li>
 <li style="padding-left:14px"><a href="#the-anatomy-of-a-c-program" class="toc-link" data-level="2">The Anatomy of a C Program</a></li>
 <li style="padding-left:14px"><a href="#how-it-works-step-by-step" class="toc-link" data-level="2">How It Works: Step by Step</a></li>
 <li style="padding-left:14px"><a href="#escape-sequences" class="toc-link" data-level="2">Escape Sequences</a></li>
 <li style="padding-left:14px"><a href="#comments-in-c" class="toc-link" data-level="2">Comments in C</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-3" class="toc-link" data-level="3">FAQs: Chapter 3</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-3" class="toc-link" data-level="2">FAQs: Chapter 3</a></li>
 <li style="padding-left:0px"><a href="#chapter-4-data-types-in-c" class="toc-link" data-level="1">Chapter 4: Data Types in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-data-type" class="toc-link" data-level="2">What is a Data Type?</a></li>
 <li style="padding-left:14px"><a href="#c-data-types-overview" class="toc-link" data-level="2">C Data Types Overview</a></li>
 <li style="padding-left:14px"><a href="#size-and-range-of-basic-types" class="toc-link" data-level="2">Size and Range of Basic Types</a></li>
 <li style="padding-left:14px"><a href="#how-char-works-ascii" class="toc-link" data-level="2">How char Works: ASCII</a></li>
 <li style="padding-left:14px"><a href="#integer-overflow-a-critical-concept" class="toc-link" data-level="2">Integer Overflow: A Critical Concept!</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-4" class="toc-link" data-level="3">FAQs: Chapter 4</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-4" class="toc-link" data-level="2">FAQs: Chapter 4</a></li>
 <li style="padding-left:0px"><a href="#chapter-5-variables-in-c" class="toc-link" data-level="1">Chapter 5: Variables in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-variable" class="toc-link" data-level="2">What is a Variable?</a></li>
 <li style="padding-left:14px"><a href="#variable-rules" class="toc-link" data-level="2">Variable Rules</a></li>
 <li style="padding-left:14px"><a href="#variable-scope-where-can-you-use-a-variable" class="toc-link" data-level="2">Variable Scope: Where Can You Use a Variable?</a></li>
 <li style="padding-left:14px"><a href="#storage-classes" class="toc-link" data-level="2">Storage Classes</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-5" class="toc-link" data-level="3">FAQs: Chapter 5</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-5" class="toc-link" data-level="2">FAQs: Chapter 5</a></li>
 <li style="padding-left:0px"><a href="#chapter-6-constants-in-c" class="toc-link" data-level="1">Chapter 6: Constants in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-constant" class="toc-link" data-level="2">What is a Constant?</a></li>
 <li style="padding-left:14px"><a href="#two-ways-to-define-constants" class="toc-link" data-level="2">Two Ways to Define Constants</a></li>
 <li style="padding-left:14px"><a href="#define-vs-const-which-to-use" class="toc-link" data-level="2">#define vs const: Which to Use?</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-6" class="toc-link" data-level="3">FAQs: Chapter 6</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-6" class="toc-link" data-level="2">FAQs: Chapter 6</a></li>
 <li style="padding-left:0px"><a href="#chapter-7-operators-in-c" class="toc-link" data-level="1">Chapter 7: Operators in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-an-operator" class="toc-link" data-level="2">What is an Operator?</a></li>
 <li style="padding-left:14px"><a href="#1-arithmetic-operators" class="toc-link" data-level="2">1. Arithmetic operators</a></li>
 <li style="padding-left:14px"><a href="#operator-precedence-high-to-low" class="toc-link" data-level="2">Operator Precedence (High to Low)</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-7" class="toc-link" data-level="3">FAQs: Chapter 7</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-7" class="toc-link" data-level="2">FAQs: Chapter 7</a></li>
 <li style="padding-left:0px"><a href="#chapter-8-input-and-output-in-c" class="toc-link" data-level="1">Chapter 8: Input and Output in C</a></li>
 <li style="padding-left:14px"><a href="#the-standard-io-library" class="toc-link" data-level="2">The Standard I/O Library</a></li>
 <li style="padding-left:14px"><a href="#printf-formatted-output" class="toc-link" data-level="2">printf(): Formatted Output</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-8" class="toc-link" data-level="3">FAQs: Chapter 8</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-8" class="toc-link" data-level="2">FAQs: Chapter 8</a></li>
 <li style="padding-left:0px"><a href="#chapter-9-control-flow-if-else-switch" class="toc-link" data-level="1">Chapter 9: Control Flow: if, else, switch</a></li>
 <li style="padding-left:14px"><a href="#what-is-control-flow" class="toc-link" data-level="2">What is Control Flow?</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-9" class="toc-link" data-level="3">FAQs: Chapter 9</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-9" class="toc-link" data-level="2">FAQs: Chapter 9</a></li>
 <li style="padding-left:0px"><a href="#chapter-10-loops-in-c" class="toc-link" data-level="1">Chapter 10: Loops in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-loop" class="toc-link" data-level="2">What is a Loop?</a></li>
 <li style="padding-left:14px"><a href="#loop-comparison" class="toc-link" data-level="2">Loop Comparison</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-10" class="toc-link" data-level="3">FAQs: Chapter 10</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-10" class="toc-link" data-level="2">FAQs: Chapter 10</a></li>
 <li style="padding-left:0px"><a href="#chapter-11-jump-statements-break-continue-goto-return" class="toc-link" data-level="1">Chapter 11: Jump Statements: break, continue, goto, return</a></li>
 <li style="padding-left:0px"><a href="#chapter-12-functions-in-c" class="toc-link" data-level="1">Chapter 12: Functions in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-function" class="toc-link" data-level="2">What is a Function?</a></li>
 <li style="padding-left:14px"><a href="#function-anatomy" class="toc-link" data-level="2">Function Anatomy</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-12" class="toc-link" data-level="3">FAQs: Chapter 12</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-12" class="toc-link" data-level="2">FAQs: Chapter 12</a></li>
 <li style="padding-left:0px"><a href="#chapter-13-arrays-in-c" class="toc-link" data-level="1">Chapter 13: Arrays in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-an-array" class="toc-link" data-level="2">What is an Array?</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-13" class="toc-link" data-level="3">FAQs: Chapter 13</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-13" class="toc-link" data-level="2">FAQs: Chapter 13</a></li>
 <li style="padding-left:0px"><a href="#chapter-14-strings-in-c" class="toc-link" data-level="1">Chapter 14: Strings in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-string-in-c" class="toc-link" data-level="2">What is a String in C?</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-14" class="toc-link" data-level="3">FAQs: Chapter 14</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-14" class="toc-link" data-level="2">FAQs: Chapter 14</a></li>
 <li style="padding-left:0px"><a href="#chapter-15-pointers-the-heart-of-c" class="toc-link" data-level="1">Chapter 15: Pointers: The Heart of C</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-pointer" class="toc-link" data-level="2">What is a Pointer?</a></li>
 <li style="padding-left:14px"><a href="#two-key-operators" class="toc-link" data-level="2">Two Key Operators</a></li>
 <li style="padding-left:14px"><a href="#chapter-15-pointers" class="toc-link" data-level="2">Chapter 15: Pointers</a></li>
 <li style="padding-left:14px"><a href="#chapter-16-pointer-arithmetic" class="toc-link" data-level="2">Chapter 16: Pointer Arithmetic</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-15" class="toc-link" data-level="3">FAQs: Chapter 15</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-15" class="toc-link" data-level="2">FAQs: Chapter 15</a></li>
 <li style="padding-left:0px"><a href="#chapter-16-dynamic-memory-allocation" class="toc-link" data-level="1">Chapter 16: Dynamic Memory Allocation</a></li>
 <li style="padding-left:14px"><a href="#static-vs-dynamic-memory" class="toc-link" data-level="2">Static vs Dynamic Memory</a></li>
 <li style="padding-left:14px"><a href="#the-four-allocation-functions" class="toc-link" data-level="2">The Four Allocation Functions</a></li>
 <li style="padding-left:14px"><a href="#how-memory-is-organized" class="toc-link" data-level="2">How Memory is Organized</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-16-dynamic-memory-allocation" class="toc-link" data-level="3">FAQs Chapter 16: Dynamic Memory Allocation</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-16-dynamic-memory-allocation" class="toc-link" data-level="2">FAQs Chapter 16: Dynamic Memory Allocation</a></li>
 <li style="padding-left:0px"><a href="#chapter-17-structures-struct" class="toc-link" data-level="1">Chapter 17: Structures (struct)</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-struct" class="toc-link" data-level="2">What is a struct?</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-17-structures-struct" class="toc-link" data-level="3">FAQs Chapter 17: Structures (struct)</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-17-structures-struct" class="toc-link" data-level="2">FAQs Chapter 17: Structures (struct)</a></li>
 <li style="padding-left:0px"><a href="#chapter-18-unions" class="toc-link" data-level="1">Chapter 18: Unions</a></li>
 <li style="padding-left:14px"><a href="#what-is-a-union" class="toc-link" data-level="2">What is a Union?</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-18-unions" class="toc-link" data-level="3">FAQs Chapter 18: Unions</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-18-unions" class="toc-link" data-level="2">FAQs Chapter 18: Unions</a></li>
 <li style="padding-left:0px"><a href="#chapter-19-enumerations-enum" class="toc-link" data-level="1">Chapter 19: Enumerations (enum)</a></li>
-<li style="padding-left:14px"><a href="#chapter-20-typedef" class="toc-link" data-level="2">Chapter 20: Typedef</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-19-enumerations-enum" class="toc-link" data-level="3">FAQs Chapter 19: Enumerations (enum)</a></li>
-<li style="padding-left:28px"><a href="#faqs-chapter-20-typedef" class="toc-link" data-level="3">FAQs Chapter 20: Typedef</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-19-enumerations-enum" class="toc-link" data-level="2">FAQs Chapter 19: Enumerations (enum)</a></li>
+<li style="padding-left:0px"><a href="#chapter-20-typedef" class="toc-link" data-level="1">Chapter 20: Typedef</a></li>
+<li style="padding-left:14px"><a href="#faqs-chapter-20-typedef" class="toc-link" data-level="2">FAQs Chapter 20: Typedef</a></li>
 <li style="padding-left:0px"><a href="#chapter-21-file-handling-in-c" class="toc-link" data-level="1">Chapter 21: File Handling in C</a></li>
 <li style="padding-left:14px"><a href="#what-is-file-io" class="toc-link" data-level="2">What is File I/O?</a></li>
 <li style="padding-left:14px"><a href="#file-opening-modes" class="toc-link" data-level="2">File Opening Modes</a></li>
@@ -909,7 +894,7 @@ body {
 <li style="padding-left:0px"><a href="#chapter-22-preprocessor-directives" class="toc-link" data-level="1">Chapter 22: Preprocessor Directives</a></li>
 <li style="padding-left:14px"><a href="#what-is-the-preprocessor" class="toc-link" data-level="2">What is the Preprocessor?</a></li>
 <li style="padding-left:14px"><a href="#faqs-chapter-22-preprocessor-directives" class="toc-link" data-level="2">FAQs Chapter 22: Preprocessor Directives</a></li>
-<li style="padding-left:14px"><a href="#chapter-23-bit-manipulation" class="toc-link" data-level="2">Chapter 23: Bit Manipulation</a></li>
+<li style="padding-left:0px"><a href="#chapter-23-bit-manipulation" class="toc-link" data-level="1">Chapter 23: Bit Manipulation</a></li>
 <li style="padding-left:14px"><a href="#faqs-chapter-23-bit-manipulation" class="toc-link" data-level="2">FAQs Chapter 23: Bit Manipulation</a></li>
 <li style="padding-left:0px"><a href="#chapter-24-oop-concepts-in-c-structs-as-classes" class="toc-link" data-level="1">Chapter 24: OOP Concepts in C: Structs as Classes</a></li>
 <li style="padding-left:14px"><a href="#oop-in-c" class="toc-link" data-level="2">OOP in C?</a></li>
@@ -5557,21 +5542,10 @@ Size of char*:   8 bytes
 
 <div class="cell md-cell"><hr>
 
-<h2 id="chapter-15-pointers">Chapter 15: Pointers</h2>
+<h2 id="pointer-arithmetic">Pointer Arithmetic</h2>
 
-<p><strong>Q1: What is a pointer and why is it so important in C?</strong>  </p>
-<p>A1: A pointer is a variable that stores the memory address of another variable. Pointers are important because they allow you to modify variables inside other functions, allocate and use dynamic memory, build linked data structures, and write efficient code that avoids copying large amounts of data.</p>
-
-<p><strong>Q2: What is a null pointer and what happens if I dereference it?</strong>  </p>
-<p>A2: A null pointer is a pointer that does not point to any valid memory; it is usually written as <code class="inline-code">NULL</code> or <code class="inline-code">0</code>. Dereferencing a null pointer (using <code class="inline-code">*ptr</code>) causes undefined behavior, typically a segmentation fault and program crash. Always check a pointer for <code class="inline-code">NULL</code> before dereferencing it.</p>
-
-<p><strong>Q3: What is the difference between <code class="inline-code">int <em>p</code> and <code class="inline-code">int</em> p</code>?</strong>  </p>
-<p>A3: There is no difference in meaning; the placement of the asterisk is just a matter of style. Both declare <code class="inline-code">p</code> as a pointer to <code class="inline-code">int</code>. However, be careful: <code class="inline-code">int<em> p, q;</code> declares <code class="inline-code">p</code> as a pointer and <code class="inline-code">q</code> as an integer. To declare two pointers, write <code class="inline-code">int </em>p, *q;</code>.</p>
-
-<p><strong>Q4: Can a pointer point to a local variable?</strong>  </p>
-<p>A4: Yes, a pointer can point to a local variable as long as that variable still exists. For example, you can take the address of a local variable and pass it to another function. However, you must not return a pointer to a local variable from a function, because the local variable ceases to exist when the function returns. The pointer would then be dangling.</p>
 </div>
-<div class="cell md-cell"><h2 id="chapter-16-pointer-arithmetic">Chapter 16: Pointer Arithmetic</h2>
+<div class="cell md-cell"><h2 id="chapter-16-pointer-arithmetic"></h2>
 
 <p>When you add an integer to a pointer, the pointer moves forward by that many elements, not by that many bytes. For example, if <code class="inline-code">p</code> is a pointer to an integer (which is 4 bytes on many systems), then <code class="inline-code">p + 1</code> points to the memory address 4 bytes after <code class="inline-code">p</code>. This is very convenient for iterating through arrays.</p>
 
@@ -5819,27 +5793,43 @@ void* pointing to double: 3.14
 
 <div class="cell md-cell"><h3 id="faqs-chapter-15">FAQs: Chapter 15</h3>
 
-<p><strong>Q1: What is the difference between <code class="inline-code">*ptr</code> and <code class="inline-code">&amp;var</code>?</strong></p>
+
+<p><strong>Q1: What is a pointer and why is it so important in C?</strong></p>
+<blockquote>
+<p>A pointer is a variable that stores the memory address of another variable. Pointers are important because they allow you to modify variables inside other functions, allocate and use dynamic memory, build linked data structures, and write efficient code that avoids copying large amounts of data..</p>
+</blockquote>
+
+  <p><strong>Q2: What is the difference between <code class="inline-code">*ptr</code> and <code class="inline-code">&amp;var</code>?</strong></p>
 <blockquote>
 <p><code class="inline-code">&amp;var</code> gives the <strong>address</strong> of <code class="inline-code">var</code>. <code class="inline-code"><em>ptr</code> gives the <strong>value stored at</strong> the address in <code class="inline-code">ptr</code>. They're inverse operations: <code class="inline-code"></em>(&amp;var) == var</code>.</p>
 </blockquote>
 
-<p><strong>Q2: What causes a Segmentation Fault?</strong></p>
+<p><strong>Q3: What causes a Segmentation Fault?</strong></p>
 <blockquote>
 <p>A segfault happens when your program tries to access memory it's not allowed to: dereferencing NULL, dereferencing uninitialized pointer, array out of bounds, or stack overflow.</p>
 </blockquote>
 
-<p><strong>Q3: What is a dangling pointer?</strong></p>
+<p><strong>Q4: What is a dangling pointer?</strong></p>
 <blockquote>
 <p>A pointer that points to memory that has been freed or gone out of scope. Using it is undefined behavior. Always set pointers to NULL after freeing them: <code class="inline-code">free(ptr); ptr = NULL;</code>.</p>
 </blockquote>
 
-<p><strong>Q4: What is a wild pointer?</strong></p>
+<p><strong>Q5: What is a wild pointer?</strong></p>
 <blockquote>
 <p>An uninitialized pointer that contains a garbage address. <code class="inline-code">int <em>p;</code>, <code class="inline-code">p</code> is wild. Dereferencing it is undefined behavior. Always initialize: <code class="inline-code">int </em>p = NULL;</code>.</p>
 </blockquote>
 
-<p><strong>Q5: What is <code class="inline-code">void *</code> used for?</strong></p>
+<p><strong>Q6: What is a null pointer and what happens if I dereference it?</strong></p>
+<blockquote>
+<p>A null pointer is a pointer that does not point to any valid memory; it is usually written as <code class="inline-code">NULL</code> or <code class="inline-code">0</code>. Dereferencing a null pointer (using <code class="inline-code">*ptr</code>) causes undefined behavior, typically a segmentation fault and program crash. Always check a pointer for <code class="inline-code">NULL</code> before dereferencing it.</p>
+</blockquote>
+
+<p><strong>Q7: Can a pointer point to a local variable?</strong></p>
+<blockquote>
+<p>Yes, a pointer can point to a local variable as long as that variable still exists. For example, you can take the address of a local variable and pass it to another function. However, you must not return a pointer to a local variable from a function, because the local variable ceases to exist when the function returns. The pointer would then be dangling</p>
+</blockquote>
+
+<p><strong>Q8: What is <code class="inline-code">void *</code> used for?</strong></p>
 <blockquote>
 <p>A <code class="inline-code">void <em></code> is a generic pointer that can hold any type's address. Used in generic functions like <code class="inline-code">malloc()</code> (returns <code class="inline-code">void</em></code>), <code class="inline-code">memcpy()</code>, sorting functions (<code class="inline-code">qsort</code>), etc.</p>
 </blockquote></div>
@@ -6647,6 +6637,24 @@ Little-endian system (Intel x86)
 
 <p>Imagine you are writing a program that handles traffic lights. You could define an enum with members <code class="inline-code">RED</code>, <code class="inline-code">YELLOW</code>, <code class="inline-code">GREEN</code>. Then you can have a variable <code class="inline-code">light</code> that can be set to <code class="inline-code">RED</code> instead of 0. If you accidentally set it to 4, the compiler might warn you. This prevents mistakes.</p>
 
+<div class="cell md-cell"><hr>
+
+  <h3 id="faqs-chapter-19-enumerations-enum">FAQs Chapter 19: Enumerations (enum)</h3>
+  
+  <p><strong>Q1: Why use an <code class="inline-code">enum</code> instead of a bunch of <code class="inline-code">#define</code>s?</strong>  </p>
+  <p>A1: An <code class="inline-code">enum</code> groups related constants together. The constants are visible in a debugger (they have symbolic names), and they have a type (<code class="inline-code">enum</code>), which can give you better compiler warnings. <code class="inline-code">#define</code> has no type and is just text substitution; it does not appear in the debugger.</p>
+  
+  <p><strong>Q2: What values do enum constants get if I don’t assign them explicitly?</strong>  </p>
+  <p>A2: The first constant gets 0, and each subsequent constant gets the previous value plus 1. For example, <code class="inline-code">enum { RED, GREEN, BLUE }</code> gives RED=0, GREEN=1, BLUE=2.</p>
+  
+  <p><strong>Q3: Can two enum constants have the same value?</strong>  </p>
+  <p>A3: Yes, you can assign the same integer value to multiple constants. This is sometimes done for aliases (e.g., <code class="inline-code">enum { START = 1, BEGIN = 1 }</code>). However, it can be confusing and is rarely needed.</p>
+  
+  <p><strong>Q4: Can I use an <code class="inline-code">enum</code> variable as an array index?</strong>  </p>
+  <p>A4: Yes, because <code class="inline-code">enum</code> constants are integers. This is a common pattern: use an <code class="inline-code">enum</code> to name array indices (e.g., <code class="inline-code">enum { NAME, AGE, GPA }; char *student[3];</code>). It makes the code more readable.</p>
+  
+  </div>
+  
 <hr>
 <h2 id="chapter-20-typedef">Chapter 20: Typedef</h2>
 
@@ -6824,23 +6832,6 @@ multiply(5,3) via funcptr = 15
 </pre></div>
 </div>
 
-<div class="cell md-cell"><hr>
-
-<h3 id="faqs-chapter-19-enumerations-enum">FAQs Chapter 19: Enumerations (enum)</h3>
-
-<p><strong>Q1: Why use an <code class="inline-code">enum</code> instead of a bunch of <code class="inline-code">#define</code>s?</strong>  </p>
-<p>A1: An <code class="inline-code">enum</code> groups related constants together. The constants are visible in a debugger (they have symbolic names), and they have a type (<code class="inline-code">enum</code>), which can give you better compiler warnings. <code class="inline-code">#define</code> has no type and is just text substitution; it does not appear in the debugger.</p>
-
-<p><strong>Q2: What values do enum constants get if I don’t assign them explicitly?</strong>  </p>
-<p>A2: The first constant gets 0, and each subsequent constant gets the previous value plus 1. For example, <code class="inline-code">enum { RED, GREEN, BLUE }</code> gives RED=0, GREEN=1, BLUE=2.</p>
-
-<p><strong>Q3: Can two enum constants have the same value?</strong>  </p>
-<p>A3: Yes, you can assign the same integer value to multiple constants. This is sometimes done for aliases (e.g., <code class="inline-code">enum { START = 1, BEGIN = 1 }</code>). However, it can be confusing and is rarely needed.</p>
-
-<p><strong>Q4: Can I use an <code class="inline-code">enum</code> variable as an array index?</strong>  </p>
-<p>A4: Yes, because <code class="inline-code">enum</code> constants are integers. This is a common pattern: use an <code class="inline-code">enum</code> to name array indices (e.g., <code class="inline-code">enum { NAME, AGE, GPA }; char *student[3];</code>). It makes the code more readable.</p>
-
-</div>
 <div class="cell md-cell"><hr>
 
 <h3 id="faqs-chapter-20-typedef">FAQs Chapter 20: Typedef</h3>
